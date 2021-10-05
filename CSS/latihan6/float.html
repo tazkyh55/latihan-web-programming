@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 600px;
+      margin: 100px auto;
+      border: 3px solid black;
+      padding: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: rgb(255, 86, 86);
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+    }
+
+    .aside {
+      background-color: rgb(224, 255, 86);
+      width: 50%;
+      height: 100px;
+      padding: 10px;
+      text-align: center;
+      line-height: 100px;
+      position: absolute;
+      /* float: left; */
+    }
+
+    .nav {
+      background-color: rgb(86, 255, 94);
+      width: 50%;
+      height: 100px;
+      padding: 10px;
+      text-align: center;
+      line-height: 100px;
+      position: absolute;
+      /* float: left; */
+      margin-top: 120px;
+    }
+
+    .main {
+      background-color: rgb(86, 216, 255);
+      height: 220px;
+      width: 50%;
+      padding: 10px;
+      text-align: center;
+      line-height: 200px;
+      float: right;
+    }
+
+    .footer {
+      background-color: rgb(255, 86, 241);
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="aside">Aside</div>
+    <div class="nav">Nav</div>
+    <div class="clearfix">
+      <div class="main">Main</div>
+    </div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+
+</html>

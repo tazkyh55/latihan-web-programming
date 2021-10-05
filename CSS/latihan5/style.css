@@ -1,0 +1,14 @@
+.header {
+	background-color: lightblue;
+}
+.navigasi a {
+	background-color: lightgreen;
+	display: inline;
+}
+.main {
+	background-color: coral;
+}
+.footer {
+	background-color: black;
+	color: white;
+}

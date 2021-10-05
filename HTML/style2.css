@@ -1,0 +1,17 @@
+body {
+	background-color: darkgrey;
+}
+
+h1 {
+	color: darkred;
+	font-family: verdana;
+}
+
+table {
+	color: darkred;
+	font-family: verdana;
+}
+
+td {
+	text-align: justify;
+}

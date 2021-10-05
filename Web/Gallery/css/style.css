@@ -1,0 +1,241 @@
+/* Font */
+@font-face {
+  font-family: 'karlaregular';
+  src: url(../fonts/karla-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url(../fonts/montserrat-bold-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url(../fonts/montserrat-regular-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url(../fonts/montserrat-semibold-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratthin';
+  src: url(../fonts/montserrat-thin-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/* Style */
+body {
+  font: 18px/36px 'karlaregular', arial, sans-serif;
+  background-color: lightgoldenrodyellow;
+}
+
+h1 {
+  font-family: 'montserratbold', verdana, arial, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  margin: 50px auto;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+}
+
+.container {
+  width: 1000px;
+  background-color: rgb(248, 246, 147);
+  margin: auto;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+  border-radius: 3px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.gallery li .thumbs {
+  width: 120px;
+  height: 120px;
+}
+
+.gallery ul li {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid lightgoldenrodyellow;
+  /* overflow: hidden; */
+  float: left;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .4);
+  position: relative;
+  margin-right: 26px;
+}
+
+.gallery li,
+.gallery li .thumbs,
+.gallery li span {
+  border-radius: 50%;
+}
+
+.gallery li span {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(220,220,220,.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: .3s;
+}
+
+.gallery li a:hover span {
+  opacity: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/* Overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: .4s;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .7);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .6);
+}
+
+.overlay:target img {
+  animation: fade 425ms;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: 140px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.overlay .close, 
+.overlay .close2,
+.overlay .close3 {
+  opacity: 0;
+}
+
+.overlay:target .close,
+.overlay:target .close2,
+.overlay:target .close3 {
+  animation: fade .4s .4s forwards;
+}
+
+.overlay .close:hover,
+.overlay .close2:hover,
+.overlay .close3:hover {
+  font-weight: bold;
+}
+
+.overlay .close2 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: 95px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+
+.overlay .close3 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: 180px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.overlay .next,
+.overlay .prev {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  background-image: url(../img/outline_arrow_forward_ios_white_48dp.png);
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  text-indent: -9999px;
+  top: 38%;
+  opacity: 0;
+}
+
+.overlay .prev {
+  background-image: url(../img/outline_arrow_back_ios_white_48dp.png);
+  margin-left: -160px;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+  animation: fade .4s .4s forwards;
+}
+
+@keyframes zoomDanfade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,24 @@
+/* ini style untuk halaman utama */
+body {
+	font-family: arial;
+}
+
+.wrap {
+	margin-top: 80px;
+	min-height: 1000px;
+}
+
+.content {
+	border-left: 1px dashed #999;
+}
+
+.profile-pic {
+	width: 80px;
+	float: left;
+	margin-right: 10px;
+}
+
+.deskripsi {
+	margin-top: 30px;
+	text-align: center;
+}

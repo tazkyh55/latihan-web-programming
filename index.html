@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			list-style: none;
+		}
+
+		body {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			color: rgb(87, 87, 87);
+		}
+
+		.container {
+			width: 500px;
+			height: 50px;
+			display: flex;
+			background-color: lightgoldenrodyellow;
+			margin: 50px auto;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		.kotak ul {
+			display: flex;
+		}
+
+		.kotak ul li a {
+			text-decoration: none;
+			color: inherit;
+			padding: 20px;
+		}
+
+		.kotak ul li a:hover {
+			background-color: rgba(255, 255, 255, .5);
+		}
+
+
+		.container-dua {
+			display: flex;
+		}
+
+		nav {
+			display: flex;
+			background-color: rgb(28, 255, 255);
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding: 13px 80px;
+		}
+
+		.nav-link ul {
+			display: flex;
+		}
+
+		.nav-link ul li {
+			margin-right: 20px;
+		}
+
+		.nav-link ul li a {
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.nav-link ul li a:hover {
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container-dua">
+		<nav>
+			<h1>Hello</h1>
+			<div class="nav-link">
+				<ul>
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<br>
+	<hr><br>
+
+	<div class="container">
+		<div class="kotak">
+			<ul>
+				<li><a href="#">Satu</a></li>
+				<li><a href="#">Dua</a></li>
+				<li><a href="#">Tiga</a></li>
+				<li><a href="#">Empat</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+</html>

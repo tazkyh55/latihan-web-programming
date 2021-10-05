@@ -1,0 +1,18 @@
+h1 {
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 75px;
+	font-family: georgia;
+}
+
+h4 {
+	font: italic normal 40px serif;
+}
+
+/*
+font: font-style, font-variant, font-weight, font-size  (wajib), line-height, font-family (wajib);
+*/
+p {
+	font: normal normal normal 20px/28px georgia;
+}

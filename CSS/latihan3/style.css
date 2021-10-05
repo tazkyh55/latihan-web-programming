@@ -1,0 +1,42 @@
+body
+{
+	font-family: sans-serif;
+}
+
+h1, h3
+{
+	color: red;
+}
+
+ul li a
+{
+	color: green;
+	text-decoration: none;
+}
+
+ol li a 
+{
+	color: blue;
+	text-decoration: none;
+}
+
+.p1
+{
+	color: green;
+}
+
+.p2
+{
+	color: blue;
+}
+
+.p3
+{
+	color: darkorange;
+	font-weight: normal;
+}
+
+.text-bold
+{
+	font-weight: bold;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body {
+            font-family: helvetica;
+            color: antiquewhite;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(0, 182, 76);
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            padding: 0 80px;
+        }
+
+        nav .logo h1 {
+            font-size: 1.4em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 1px antiquewhite, 0 0 2px antiquewhite;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1em;
+        }
+
+        nav ul li a:hover {
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 992px) {
+            nav {
+                padding: 0 50px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                padding: 0 40px;
+            }
+        }
+
+
+        .img {
+            max-width: 1000px;
+            height: 700px;
+            margin: 50px auto;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+
+        .img .bg-img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>Hello</h1>
+        </div>
+
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="img">
+        <img class="bg-img" src="Web/Latihan1/img/bg.jpg" alt="Nature">
+    </div>
+</body>
+
+</html>

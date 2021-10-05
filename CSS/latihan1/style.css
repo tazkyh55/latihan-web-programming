@@ -1,0 +1,14 @@
+body {
+	color: darkorange;
+	font-family: gabriola regular;
+	text-align: center;
+	background-color: darkslategrey;
+}
+
+h1 {
+	font-size: 75px;
+}
+
+p {
+	font-size: 25px;
+}

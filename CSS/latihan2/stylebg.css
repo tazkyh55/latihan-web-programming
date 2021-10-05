@@ -1,0 +1,12 @@
+body {
+	background-color: darkblue;
+	background-image: url(oriental-tiles/oriental-tiles.png);
+	background-repeat: repeat-y;
+	background-position: center right;
+	width: 500px;
+	height: 500px;
+}
+
+h1 {color: orange;}
+
+p {color: orange;}

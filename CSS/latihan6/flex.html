@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: rgb(0, 0, 0);
+    }
+
+    .container {
+      width: 600px;
+      margin: 60px auto;
+      padding: 5px;
+      border: 3px solid black;
+    }
+
+    header {
+      background-color: rgb(255, 94, 94);
+      height: 50px;
+    }
+
+    header,
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .sidebar {
+      flex: 1;
+    }
+
+    aside,
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    aside {
+      background-color: rgb(180, 255, 59);
+      height: 70px;
+    }
+
+    nav {
+      background-color: rgb(59, 255, 141);
+      height: 70px;
+    }
+
+    main {
+      background-color: rgb(59, 137, 255);
+      height: 140px;
+      flex: 1.5;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    footer {
+      background-color: rgb(159, 132, 255);
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>Header</header>
+
+    <div class="content">
+      <div class="sidebar">
+        <aside>Aside</aside>
+        <nav>Nav</nav>
+      </div>
+
+      <main>Main</main>
+    </div>
+
+    <footer>Footer</footer>
+
+  </div>
+</body>
+
+</html>

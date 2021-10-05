@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(221, 255, 70);
+}
+
+
+.container .kolom-utama {
+  flex: 5;
+  order: 2;
+}
+
+.container .kolom-utama h1 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 0 20px 20px;
+}
+
+.container .kolom-utama p {
+  margin-top: 20px;
+  text-align: justify;
+  padding: 0 20px 20px;
+}
+
+.container .sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.container .sidebar-dua {
+  flex: 2;
+  order: 3;
+}
+
+
+
+
+.container-dua {
+  max-width: 900px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.container-dua .layanan h1 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.layanan {
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.container-dua .layanan.satu {
+  background-color: rgb(255, 94, 94);
+} 
+
+.container-dua .layanan.dua {
+  background-color: rgb(94, 255, 94);
+} 
+
+.container-dua .layanan.tiga {
+  background-color: rgb(94, 150, 255);
+} 
+
+.container-tiga {
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.kotak {
+  border-radius: 13px;
+  border: 5px solid black;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.kotak .gambar {
+  height: 200px;
+  background-color: #aaa;
+}
+
+.kotak p {
+  padding: 10px;
+  text-align: center;
+}
+
+.kotak.dua {
+  transform: scale(1.1);
+}
+
+
+
+@media(min-width: 700px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+
+  .container-tiga {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+  }
+
+}
