@@ -18,9 +18,8 @@ a {
 }
 
 /* Style */
-
-html,
-#body {
+/* prettier-ignore */
+html, #body {
   color: white;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
