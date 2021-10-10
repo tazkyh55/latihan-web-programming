@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid | Area</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #ddd;
+        font-family: "calibri";
+        font-size: 18px;
+      }
+
+      .container {
+        width: 60%;
+        margin: 50px auto;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #eee;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: 50px auto auto 50px;
+        grid-template-areas:
+          "header header header"
+          "main main sidebar"
+          "main main sidebar"
+          "footer footer footer";
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        padding: 20px;
+        border-radius: 20px;
+        color: #222;
+        line-height: 20px;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: lightblue;
+      }
+
+      .main {
+        grid-area: main;
+        background-color: lightcoral;
+        padding: 20px 30px 30px 30px;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: lightgreen;
+        padding: 20px 30px 30px 30px;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: lightgoldenrodyellow;
+      }
+
+      #sidebar {
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item header">Header</div>
+      <div class="item main">
+        Main <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime qui tempore facere blanditiis odit magnam modi voluptatum tenetur, dolores consectetur, consequuntur, iusto inventore incidunt adipisci
+        voluptatibus provident illo ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate deleniti odit, culpa, facere vitae, in ipsum maxime cupiditate fugiat id architecto delectus similique
+        consequatur voluptas nisi. Magni, quibusdam ex. Repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, doloribus? Iste ratione delectus reprehenderit sequi eveniet, aperiam maiores.
+        Rerum nostrum inventore, voluptate exercitationem iusto cumque illum excepturi magnam nisi harum in sequi explicabo, veritatis reiciendis, voluptatum molestias temporibus! Ab optio vitae, eum, officia, itaque
+        aspernatur ex earum non dolorem magnam perspiciatis at architecto pariatur velit cum eos. Ut doloribus ducimus corrupti deleniti nobis magni aliquid architecto minima et inventore eligendi repellat atque vel
+        tenetur voluptates adipisci nesciunt sequi, at ratione natus necessitatibus nostrum doloremque odio? Recusandae sed aperiam voluptas, perferendis earum culpa neque quae provident illum, quo, officia labore quas.
+      </div>
+      <div class="item sidebar" id="sidebar">
+        Sidebar <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla similique amet eius veritatis eum voluptatem numquam? Quis quos voluptatum nemo.
+      </div>
+      <div class="item footer">Footer</div>
+      <!-- <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div> -->
+    </div>
+  </body>
+</html>

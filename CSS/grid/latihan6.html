@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Grid | Explicit & implicit</title>
+    <title>CSS Grid | Min Content & Max Content</title>
     <style>
       body {
         margin: 0;
@@ -13,28 +13,30 @@
         background-color: #ddd;
       }
 
-      .container {
+      .container,
+      .container2 {
         width: 60%;
         margin: 50px auto;
         border: 2px solid #222;
         display: grid;
         gap: 5px;
-        /* Explicit Track */
-        grid-template-columns: 50px 200px;
-        grid-template-rows: 100px 50px;
-        /* Implicit Track */
-        grid-auto-columns: 200px;
-        grid-auto-rows: 200px;
+        grid-template-columns: 1fr min-content 1fr;
       }
 
-      .item {
+      .container2 {
+        grid-template-columns: 1fr max-content 1fr;
+      }
+
+      .item,
+      .item2 {
         background-color: rgb(138, 209, 254);
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .item:nth-child(even) {
+      .item:nth-child(even),
+      .item2:nth-child(even) {
         background-color: rgb(255, 142, 142);
       }
     </style>
@@ -45,11 +47,27 @@
       <div class="item">2</div>
       <div class="item">3</div>
       <div class="item">4</div>
-      <div class="item">5</div>
+      <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, quidem!</div>
       <div class="item">6</div>
       <div class="item">7</div>
       <div class="item">8</div>
       <div class="item">9</div>
+    </div>
+
+    <br /><br /><br /><br />
+    <hr />
+    <br /><br /><br /><br />
+
+    <div class="container2">
+      <div class="item2">1</div>
+      <div class="item2">2</div>
+      <div class="item2">3</div>
+      <div class="item2">4</div>
+      <div class="item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, ea?</div>
+      <div class="item2">6</div>
+      <div class="item2">7</div>
+      <div class="item2">8</div>
+      <div class="item2">9</div>
     </div>
   </body>
 </html>

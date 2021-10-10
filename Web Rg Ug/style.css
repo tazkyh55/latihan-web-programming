@@ -143,6 +143,7 @@ html, #body {
 }
 
 /* Breakpoints */
+/* prettier-ignore */
 
 @media (max-width: 600px) {
   #navbar {

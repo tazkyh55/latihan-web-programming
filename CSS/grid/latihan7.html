@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Grid | Explicit & implicit</title>
+    <title>CSS Grid | Auto Fill & Auto Fit</title>
     <style>
       body {
         margin: 0;
@@ -19,12 +19,7 @@
         border: 2px solid #222;
         display: grid;
         gap: 5px;
-        /* Explicit Track */
-        grid-template-columns: 50px 200px;
-        grid-template-rows: 100px 50px;
-        /* Implicit Track */
-        grid-auto-columns: 200px;
-        grid-auto-rows: 200px;
+        grid-template-columns: repeat(auto-fit, 200px);
       }
 
       .item {

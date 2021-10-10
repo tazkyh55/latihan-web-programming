@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+/* prettier-ignore */
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------Container------------------------------------------------ */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  row-gap: 50px;
+  grid-template-areas:
+    "header header header"
+    "main main side"
+    "main main side"
+    "footer footer footer";
+}
+
+#header {
+  grid-area: header;
+  background-image: linear-gradient(47deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+    url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1vdW50YWlufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+  background-size: cover;
+  color: #ddd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+#main {
+  grid-area: main;
+  padding: 30px 30px 30px 50px;
+}
+
+#side {
+  grid-area: side;
+  padding: 50px 40px;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/* ------------------------------------------------Akhir Container-------------------------------------------- */
+
+/* -----------------------------------------------------Header------------------------------------------------ */
+
+.header-txt {
+  text-align: center;
+  color: #eee;
+}
+
+.header-txt h1 {
+  margin-bottom: 20px;
+  font-size: 3.5em;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8), -1px -1px 1px rgba(255, 255, 255, 0.6);
+}
+
+.header-txt .btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #ddd;
+  background-color: #00265f;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.header-txt .btn:hover {
+  background-color: #1f1f1f;
+  transition: 0.3s;
+}
+
+/* --------------------------------------------------Akhir Header--------------------------------------------- */
+
+/* -----------------------------------------------------Main-------------------------------------------------- */
+
+.article .judul h2 {
+  font-size: 2.2em;
+}
+
+.article .judul p {
+  font-size: 0.8em;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.article .judul a:hover {
+  text-decoration: underline;
+}
+
+.article .main-article p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.main-article {
+  margin-bottom: 80px;
+}
+
+/* --------------------------------------------------Akhir Main----------------------------------------------- */
+
+/* -----------------------------------------------------Side-------------------------------------------------- */
+
+.about {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.flex-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about .flex-about img {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.about .flex-about .about-txt a {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.about .flex-about .about-txt p {
+  font-size: 0.7em;
+}
+
+.about .flex-about .about-txt a:hover {
+  text-decoration: underline;
+}
+
+.about .about-p {
+  font-size: 0.7em;
+}
+
+/* --------------------------------------------------Akhir Side----------------------------------------------- */
+
+/* ----------------------------------------------------Footer------------------------------------------------- */
+
+#footer p {
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------Akhir Footer---------------------------------------------- */
+
+/* ---------------------------------------------Responsive Breakpoint----------------------------------------- */
+
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "side side side"
+      "footer footer footer";
+  }
+
+  #header {
+    padding: 39px;
+  }
+
+  #main {
+    grid-area: main;
+    padding: 10px 30px 0 30px;
+  }
+
+  #side {
+    grid-area: side;
+    padding: 40px 30px;
+  }
+
+  .header-txt {
+    text-align: justify;
+  }
+
+  .header-txt h1 {
+    margin-bottom: 20px;
+    font-size: 2.8em;
+  }
+
+  .header-txt p {
+    font-size: 0.7em;
+  }
+
+  .header-txt .btn {
+    font-size: 0.6em;
+  }
+
+  .article .judul h2 {
+    font-size: 1.6em;
+  }
+
+  .article .judul p {
+    font-size: 0.5em;
+  }
+
+  .article .main-article p {
+    font-size: 0.6em;
+  }
+
+  .main-article {
+    margin-bottom: 0;
+  }
+
+  .about .flex-about img {
+    width: 40px;
+  }
+
+  .about .flex-about .about-txt a {
+    font-size: 0.85em;
+  }
+
+  .about .flex-about .about-txt p {
+    font-size: 0.45em;
+  }
+
+  .about .about-p {
+    font-size: 0.45em;
+  }
+
+  #footer p {
+    font-size: 0.55em;
+  }
+}
