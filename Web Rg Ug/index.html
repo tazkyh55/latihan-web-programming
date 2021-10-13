@@ -1,57 +1,157 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MA. Persis Katapang | Rijaalul Ghad Ummahatul Ghad</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font/stylesheet.css" />
+    <script src="https://kit.fontawesome.com/502afb5c36.js" crossorigin="anonymous"></script>
+    <title>MA. Persis Katapang | Rijaalul Ghad Ummahatul Ghad</title>
   </head>
-  <body id="body">
+  <body>
+    <!-- -------------------------------Navbar----------------------------- -->
     <nav id="navbar">
-      <div id="logo">
-        <img id="logo-img" src="img/logo.png" alt="Logo RG-UG" />
-        <div id="span-logo">
-          <span>MA. Persis Katapang</span>
-          <p>Rijaalul Ghad Ummahatul Ghad</p>
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo" />
+        <div class="logo-txt">
+          <p style="font-family: 'poppinsbold'">MA. Persis Katapang</p>
+          <span>Rijaalul Ghad Ummahatul Ghad</span>
         </div>
-      </div>
+      </a>
 
-      <ul id="nav-menu">
-        <li><a id="nav-link" href="#body">Home</a></li>
-        <li><a id="nav-link" href="#">Article</a></li>
-        <li><a id="nav-link" href="#">About</a></li>
-        <li><a id="nav-link" href="#">Contact</a></li>
+      <ul class="link">
+        <li><a style="font-family: 'poppinsmedium'" href="index.html" class="nav-link">Home</a></li>
+        <li><a style="font-family: 'poppinsmedium'" href="#" class="nav-link">Article</a></li>
+        <li><a style="font-family: 'poppinsmedium'" href="#" class="nav-link">About</a></li>
+        <li><a style="font-family: 'poppinsmedium'" href="#form" class="nav-link">Contact</a></li>
       </ul>
+
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
-    <section id="sec-1">
-      <div id="div-sec-1">
-        <h1>Selamat Datang</h1>
-        <blockquote>
-          <q><em>Sampaikanlah dariku walau hanya satu ayat</em></q>
-        </blockquote>
-      </div>
+    <div id="container">
+      <!-- -------------------------------Header----------------------------- -->
+      <header id="header">
+        <div class="header-txt">
+          <h1>Madrasah Aliyah Persis Katapang</h1>
+          <blockquote class="quotes">
+            <q><em>Sampaikanlah dariku walau hanya satu ayat.</em></q>
+          </blockquote>
+          <button type="button" class="btn">Learn More</button>
+        </div>
+      </header>
 
-      <button>About</button>
-    </section>
+      <!-- -------------------------------Opening----------------------------- -->
 
-    <section id="sec-2">
-      <h3>بسم الله الرحمن الرحيم</h3>
-      <br /><br />
-      <hr />
-      <br /><br />
-      <p>
-        Selamat datang di situs web resmi tasykil RG & UG MA. Persis Katapang. Kami menyediakan berbagai macam artikel mulai dari yang berkaitan dengan keislaman maupun ilmu- ilmu umum lainnya, serta kami pula memuat
-        beberapa informasi mengenai sekolah kami.
-      </p>
-      <br /><br />
-      <hr />
-    </section>
-
-    <div class="container">
-      <h1>Hello world</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellat quia dolorum, at quasi saepe?</p>
+      <section id="opening">
+        <h1>- بسم الله الرحمن الرحيم -</h1>
+        <span></span>
+        <p>
+          Selamat datang di situs web resmi tasykil RG & UG MA. Persis Katapang. Kami menyediakan berbagai macam artikel mulai dari yang berkaitan dengan keislaman maupun ilmu- ilmu umum lainnya, serta kami pula memuat
+          beberapa informasi mengenai sekolah kami.
+        </p>
+        <span></span>
+      </section>
     </div>
+
+    <!-- -------------------------------Main----------------------------- -->
+
+    <div id="container-2">
+      <section id="sec-1">
+        <h2>Tujuan Kami</h2>
+        <p>Berdasarkan hadits :</p>
+        <p style="font-weight: bold; text-align: right" class="arabic-txt">بَلِّغُوا عَنِّي وَلَوْ آيَةً</p>
+        <p>
+          <q><em>Sampaikanlah dariku walau hanya satu ayat. </em></q>
+        </p>
+        <p>Kami sadar bahwa pengamalan hadits tersebut dapat berkembang mengikuti zaman dan salah satu caranya adalah dengan menciptakan website ini.</p>
+      </section>
+
+      <aside id="side">
+        <div class="box-side">
+          <p>Maka dari itu, langsung check artikel- artikel kami di halaman berikut.</p>
+          <button type="button" class="btn-2">Artikel</button>
+        </div>
+      </aside>
+
+      <section id="sec-img-1">
+        <img src="img/img1.jpg" alt="Tasykil" class="sec-img img1" />
+      </section>
+
+      <section id="sec-2">
+        <h2>Program Kerja</h2>
+        <p>
+          Demi menyesuaikan perkembangan zaman dengan amal ilmu pengetahuan kami dipesantren, kami selaku tasykil RG & UG MA. Persis Katapang khususnya bidang garapan sekretaris dan publikasi, bekerja sama dalam rangka
+          menyusun dan mengembangkan website ini dengan harapan dapat menjadi platform yang bermanfaat, dapat mewadahi berbagai karya para santri serta dapat lebih memperkenalkan kembali sekolah kami kepada khalayak
+          umum.
+        </p>
+      </section>
+
+      <section id="sec-3">
+        <h2>Ta’aruf bersama MA. Persis Katapang</h2>
+        <p>
+          Madrasah Aliyah Persis Katapang merupakan salah satu pesantren Persis di kabupaten Bandung yang didirikan pada tahun 1996 di Jl. Bojong Buah Desa Pangauban Kecamatan Katapang Kabupaten Bandung . Saat ini, MA.
+          Persis Katapang dikepalai oleh seorang mudir yang bernama Drs. Dadang Ahmad Tajudin dan dibantu oleh para pengajar/ asatidz beserta staf- stafnya dalam mengelola Madrasah.
+        </p>
+        <p>Hingga saat ini, Madrasah Aliyah Persis Katapang telah berakreditasi B, dan masih berkembang dari tahun ke tahunnya.</p>
+      </section>
+
+      <section id="sec-4">
+        <img src="img/img2.jpg" alt="MA. Persis Katapang" class="sec-img img2" />
+      </section>
+
+      <section id="sec-img-2">
+        <img src="img/img3.jpg" alt="MA. Persis Katapang" class="sec-img img3" />
+      </section>
+
+      <section id="sec-5">
+        <p>Memiliki 3 jurusan peminatan disetiap angkatannya, disertai dengan kurikulum khusus pada setiap peminatan nya untuk lebih memfokuskan santri pada bidang yang dituju.</p>
+        <p>Beberapa jurusan peminatan tersebut antara lain :</p>
+        <ul>
+          <li>Jurusan Mipa (Matematika Ilmu Pengetahuan Alam)</li>
+          <li>Jurusan Keagamaan</li>
+          <li>Jurusan IPS (Ilmu Pengetahuan Sosial</li>
+        </ul>
+        <p>Selain memiliki 3 Perminatan, Madrasah Aliyah atau disebut juga Mu’allimin Persis Katapang memiliki beberapa Ekstrakulikuler dari sekolah untuk mewadahi minat, bakat dan keterampilan para santri.</p>
+      </section>
+    </div>
+
+    <!-- -------------------------------Form----------------------------- -->
+
+    <div id="container-3">
+      <h2>Contact Us</h2>
+      <form id="form">
+        <label for="username">Name</label>
+        <input type="text" id="username" placeholder="Your Name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Your Password" required />
+        <button type="submit" class="btn-3">Submit</button>
+      </form>
+    </div>
+
+    <!-- -------------------------------Footer----------------------------- -->
+
+    <footer id="footer">
+      <p>&copy; Copyright 2021. All rights reserved.</p>
+    </footer>
+
+    <!-- -------------------------------Script----------------------------- -->
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("#navbar .link");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
   </body>
 </html>
